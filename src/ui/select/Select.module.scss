@@ -66,7 +66,8 @@
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
-	height: 30px;
+	box-sizing: border-box;
+	height: 48px;
 	padding: 15px 17px;
 	background-color: rgb(255 255 255 / 100%);
 	border: 1px;
@@ -78,7 +79,11 @@
 }
 
 .option:hover {
-	background: var(--grey, #c4c4c4);
+  background: #eee;
+}
+
+.option:active {
+  background: #d7d7d7;
 }
 
 @mixin option-color-before {
